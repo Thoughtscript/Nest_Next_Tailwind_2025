@@ -2,7 +2,7 @@
 // Client side rendering
 // https://nextjs.org/docs/pages/building-your-application/data-fetching/client-side
 // https://swr.vercel.app/docs/getting-started
-import useSWR from 'swr' // <- this is the recocommended way to use React Hooks and Client rendering now
+import useSWR from 'swr' // <- this is the recommended way to use React Hooks and Client rendering now
 
 import { PageWrapper } from '../page_wrapper'
 
@@ -24,6 +24,7 @@ export default function Table() {
     const TD_STYLE = "border border-gray-300 p-3"
     const TH_STYLE = `${TD_STYLE} bg-black text-white`
 
+    // Cool and much simplified rerendering/state management
     if (!data) return (PageWrapper(<div>Content is loading...</div>))
     if (error) return (PageWrapper(<div>Error fetching data...</div>))
 
