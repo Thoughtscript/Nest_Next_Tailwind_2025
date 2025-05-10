@@ -1,0 +1,24 @@
+services:
+  nest:
+    build:
+      context: ./nest
+      dockerfile: dockerfile
+    ports:
+      - '8500:8500'
+    networks:
+      - testnet
+
+  next:
+    build:
+      context: ./next
+      dockerfile: dockerfile
+    depends_on:
+      - nest
+    ports:
+      - '3000:3000'
+    networks:
+      - testnet
+
+networks:
+  testnet:
+    driver: bridge
