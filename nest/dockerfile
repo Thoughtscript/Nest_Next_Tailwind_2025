@@ -7,4 +7,10 @@ COPY . .
 
 RUN npm i
 
+RUN echo "Generating new SSL..." && \
+    cd _auth && \
+    openssl genrsa -out key.pem 2048 && \ 
+    openssl req -new -sha256 -subj "/C=US/ST=IL/O=Blah/localityName=Champaign/commonName=Thoughtscript/organizationalUnitName=Thoughtscript/emailAddress=adam.intae.gerard@protonmail.com" -key key.pem -out csr.csr && \
+    openssl req -x509 -sha256 -days 30 -key key.pem -in csr.csr -out certificate.pem
+
 CMD ["bash", "run.sh"]
