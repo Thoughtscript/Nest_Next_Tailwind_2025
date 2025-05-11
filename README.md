@@ -27,9 +27,10 @@ docker compose up
 
 ## Endpoints
 
-1. http://localhost:3000/prefetch_table
-2. http://localhost:3000/client_table
-3. https://localhost:8500/cities
+1. **Client** http://localhost:3000/prefetch_table
+2. **Client** http://localhost:3000/client_table
+3. `GET`, `POST`, `DELETE` https://localhost:8500/cities
+4. `GET` https://localhost:8500/city
 
 ## Resources and Links
 
