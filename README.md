@@ -19,7 +19,7 @@ docker compose up
     * Tailwind is included in the **Next.js** distribution.
     * Note that `npm run lint` requires `Eslint`.
 3. **Next.js** uses:
-   * `page.tsx` in leiu of `index.js` (or the like). Akin to `__INIT__.py` and other file/dir-based routing conventions.
+   * `page.tsx` in leiu of `index.js` (or the like). Akin to `__init__.py` and other file/dir-based routing conventions.
        * These are automatically injected into the client router (think **React Router Switch**).
 4. **Next.js** *prefetching* vs `"use client"`:
    * **Next.js** will prefetch and render content Server Side by default (before returning the generated content).
