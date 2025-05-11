@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
-echo "start the app..." && npm run build && npm run test && npm run start &
+
+# use sequential jest tests here
+echo "start the app..." && npm run build && npm run test:seq && npm run start &
 
 wait

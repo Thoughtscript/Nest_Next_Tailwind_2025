@@ -10,6 +10,8 @@
 docker compose up
 ```
 
+> Be forewarned that the Docker Image will create a new Local Development SSL Certificate on each build.
+
 ## Notes
 
 1. **Nest.js** project initialization: `npm i -g @nestjs/cli` followed by `nest new project-name`.
@@ -39,3 +41,4 @@ docker compose up
 6. https://swr.vercel.app/
 7. https://nextjs.org/docs/pages/api-reference/components/image#priority
 8. [Unsplash - Anders Jildén](https://unsplash.com/photos/low-angle-photography-of-gray-building-at-daytime-Sc5RKXLBjGg)
+9. https://docs.nestjs.com/controllers
