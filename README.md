@@ -37,3 +37,5 @@ docker compose up
 4. https://github.com/Thoughtscript/x_team_css_in_js
 5. https://nextjs.org/docs/pages/building-your-application/data-fetching/client-side
 6. https://swr.vercel.app/
+7. https://nextjs.org/docs/pages/api-reference/components/image#priority
+8. [Unsplash - Anders Jildén](https://unsplash.com/photos/low-angle-photography-of-gray-building-at-daytime-Sc5RKXLBjGg)

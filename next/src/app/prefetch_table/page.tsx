@@ -1,4 +1,4 @@
-import { PageWrapper } from "../page_wrapper"
+import { PageWrapper } from "../(helpers)/page_wrapper"
 
 export default async function Table() {
   // https://tailwindcss.com/docs/flex-basis

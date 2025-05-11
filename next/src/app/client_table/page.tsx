@@ -4,7 +4,7 @@
 // https://swr.vercel.app/docs/getting-started
 import useSWR from 'swr' // <- this is the recommended way to use React Hooks and Client rendering now
 
-import { PageWrapper } from '../page_wrapper'
+import { PageWrapper } from '../(helpers)/page_wrapper'
 
 // Cannnot be async if client side rendered
 export default function Table() {
